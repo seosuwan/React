@@ -4,6 +4,7 @@ import Navi from './Navi'
 
 
 
+
 const Home = () => (
     <div>
         <Navi/>

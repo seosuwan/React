@@ -8,10 +8,16 @@ import ImageMap from './components/ImageMap';
 import CousreRegister from './components/CousreRegister';
 import Join from './components/Join';
 import Home from './components/Home';
+import styled from "styled-components";
+import Header from "./components/Header";
 
 
-const App = () => ( //jsx로 변환
+
     
+const App = () => ( //jsx로 변환
+
+    <>
+    <Header/>
     <Switch>
     <Redirect from='/Home' to= {'/'}/>
     <Route exact path='/' component= {Home}/>
@@ -22,9 +28,22 @@ const App = () => ( //jsx로 변환
     <Route exact path='/Color' component ={Color}/>
     <Route exact path='/CousreRegister' component ={CousreRegister}/>
     <Route exact path='/Join' component= {Join}/>
+    <Route exact path='/Header' component={Header}/>
+    
+
   
     </Switch>
+    </>
   );
+
+  const Layout = styled.div`
+    font-family: "Klee One";
+    margin: 0 auto;
+    display: flex;
+    width: 100%
+    flex-flow: row wrap;
+    color : red;
+  `
 
 
 export default App;
