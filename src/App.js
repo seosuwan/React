@@ -10,6 +10,7 @@ import Join from './components/Join';
 import Home from './components/Home';
 import styled from "styled-components";
 import Header from "./components/Header";
+import HomePage from "./pages/HomePage";
 
 
 
@@ -19,7 +20,7 @@ const App = () => ( //jsx로 변환
     <>
     <Header/>
     <Switch>
-    <Redirect from='/Home' to= {'/'}/>
+    <Redirect from='/HomePage' to= {'/'}/>     
     <Route exact path='/' component= {Home}/>
     <Route exact path='/ImageMap' component = {ImageMap}/>
     <Route exact path='/OnlineProfile' component ={OnlineProfile}/>
@@ -29,6 +30,7 @@ const App = () => ( //jsx로 변환
     <Route exact path='/CousreRegister' component ={CousreRegister}/>
     <Route exact path='/Join' component= {Join}/>
     <Route exact path='/Header' component={Header}/>
+    
     
 
   
