@@ -1,27 +1,22 @@
 import React from "react"
 import {Route, Redirect ,Switch} from 'react-router-dom'
-import OnlineProfile from './components/OnlineProfile';
-import Login from './components/Login';
-import SchoolStatus from './components/SchoolStatus';
-import Color from './components/Color';
-import ImageMap from './components/ImageMap';
-import CousreRegister from './components/CousreRegister';
-import Join from './components/Join';
-import Home from './components/Home';
+import {Header,OnlineProfile,
+    Login,SchoolStatus,Color,
+    ImageMap,CousreRegister,
+    Join} from 'components/index';
 import styled from "styled-components";
-import Header from "./components/Header";
-import HomePage from "./pages/HomePage";
+import {HomePage} from "pages/index";
 
 
 
-    
+
 const App = () => ( //jsx로 변환
 
     <>
     <Header/>
     <Switch>
     <Redirect from='/HomePage' to= {'/'}/>     
-    <Route exact path='/' component= {Home}/>
+    <Route exact path='/' component= {HomePage}/>
     <Route exact path='/ImageMap' component = {ImageMap}/>
     <Route exact path='/OnlineProfile' component ={OnlineProfile}/>
     <Route exact path='/Login' component ={Login} />

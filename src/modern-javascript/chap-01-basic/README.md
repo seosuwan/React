@@ -1,3 +1,4 @@
+
 variable 은 값을 담기위한 공간이다
 var 대신 let 을 사용하는 이유
 * var 는 전역이고 let 은 지역이다.
