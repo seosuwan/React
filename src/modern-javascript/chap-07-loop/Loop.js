@@ -1,5 +1,5 @@
 import React from 'react';
-import { from } from 'webpack-sources/lib/CompatSource';
+
 
 const Loop = () => {
     const car = () => {

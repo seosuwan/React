@@ -5,7 +5,7 @@ import {Header,OnlineProfile,
     ImageMap,CousreRegister,
     Join} from 'components/index';
 import styled from "styled-components";
-import {HomePage} from "pages/index";
+import {Home} from "components/index";
 
 
 
@@ -15,8 +15,8 @@ const App = () => ( //jsx로 변환
     <>
     <Header/>
     <Switch>
-    <Redirect from='/HomePage' to= {'/'}/>     
-    <Route exact path='/' component= {HomePage}/>
+    <Redirect from='/Home' to= {'/'}/>     
+    <Route exact path='/' component= {Home}/>
     <Route exact path='/ImageMap' component = {ImageMap}/>
     <Route exact path='/OnlineProfile' component ={OnlineProfile}/>
     <Route exact path='/Login' component ={Login} />
